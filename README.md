@@ -2,6 +2,12 @@
 Various wine patches mostly aimed at improving performance that aren't in wine or wine-staging (yet?).
 May require CSMT patches (wine-staging).
 
+### 0000-undo-ntdll-Heap-FreeLists.patch
+
+Undoes the wine-staging "ntdll-Heap-Freelists" patch to allow patches 1, 3, and 5 to apply
+cleanly to a pre-patched wine-staging tarball. Not needed on a clean tree or one that you
+have patched yourself to exclude the aforementioned patch.
+
 ### 0001-ntdll-improve-heap-allocation-performance.patch
 
 Improves heap allocation performance by balancing free lists and improving common bottlenecks.
